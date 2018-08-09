@@ -95,7 +95,7 @@ function updateConfigFilesFrom (sourceConfig, configMunger, locations) {
 
     // First cleanup current config and merge project's one into own
     // Overwrite platform config.xml with defaults.xml.
-    shell.cp('-f', locations.defaultConfigXml, locations.configXml);
+    // shell.cp('-f', locations.defaultConfigXml, locations.configXml);
 
     // Then apply config changes from global munge to all config files
     // in project (including project's config)
